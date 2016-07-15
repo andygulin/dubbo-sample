@@ -1,4 +1,4 @@
-package org.dubbo.sample.provider;
+package dubbo.sample.provider;
 
 import java.io.IOException;
 
