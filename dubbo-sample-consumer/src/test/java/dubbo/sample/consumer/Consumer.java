@@ -1,4 +1,4 @@
-package org.dubbo.sample.consumer;
+package dubbo.sample.consumer;
 
 import java.util.List;
 
