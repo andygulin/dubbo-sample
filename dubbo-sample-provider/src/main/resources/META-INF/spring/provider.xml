@@ -16,9 +16,10 @@
 	<dubbo:registry address="zookeeper://192.168.209.128:2181" />
 
 	<dubbo:protocol name="dubbo" port="20880" />
-
-	<dubbo:service interface="dubbo.sample.service.UserService" ref="userService" />
+	
+	<bean id="helloService" class="dubbo.sample.service.impl.HelloServiceImpl" />
+	<dubbo:service interface="dubbo.sample.service.HelloService" ref="helloService" />
 
 	<bean id="userService" class="dubbo.sample.service.impl.UserServiceImpl" />
-
+	<dubbo:service interface="dubbo.sample.service.UserService" ref="userService" />
 </beans>
