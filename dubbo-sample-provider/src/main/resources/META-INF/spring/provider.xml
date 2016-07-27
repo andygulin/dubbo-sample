@@ -17,14 +17,8 @@
 
 	<dubbo:protocol name="dubbo" port="20880" />
 
-	<dubbo:service interface="dubbo.sample.service.UserService"
-		ref="userService" />
+	<dubbo:service interface="dubbo.sample.service.UserService" ref="userService" />
 
 	<bean id="userService" class="dubbo.sample.service.impl.UserServiceImpl" />
-
-	<dubbo:service interface="dubbo.sample.service.HelloService"
-		ref="helloService" />
-
-	<bean id="helloService" class="dubbo.sample.service.impl.HelloServiceImpl" />
 
 </beans>
