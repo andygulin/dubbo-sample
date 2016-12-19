@@ -1,12 +1,12 @@
 package dubbo.sample.service;
 
-import java.util.List;
-
 import dubbo.sample.bean.User;
+
+import java.util.List;
 
 public interface UserService {
 
-	User getUser(Integer id);
+    User getUser(Integer id);
 
-	List<User> getUserList();
+    List<User> getUserList();
 }
