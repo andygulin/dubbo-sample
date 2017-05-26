@@ -16,9 +16,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public User getUser(Integer id) {
         try {
-            User user = jdbcTemplate.queryForObject("SELECT * FROM user WHERE id=?",
-                    BeanPropertyRowMapper.newInstance(User.class), id);
-            return user;
+            return jdbcTemplate.queryForObject("SELECT * FROM user WHERE id=?", BeanPropertyRowMapper.newInstance(User.class), id);
         } catch (Exception e) {
             return null;
         }
@@ -28,8 +26,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<User> getUserList() {
         try {
-            List<User> users = jdbcTemplate.query("SELECT * FROM user", BeanPropertyRowMapper.newInstance(User.class));
-            return users;
+            return jdbcTemplate.query("SELECT * FROM user", BeanPropertyRowMapper.newInstance(User.class));
         } catch (Exception e) {
             return null;
         }

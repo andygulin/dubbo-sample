@@ -26,8 +26,8 @@ INSERT INTO `user` VALUES(NULL,'ccc',13,'xianggang',NOW());
 cd dubbo-sample
 mvn clean package
 cd dubbo-sample-provider/target
-tar zxvf dubbo-sample-provider-0.0.1-SNAPSHOT-assembly.tar.gz
-cd dubbo-sample-provider-0.0.1-SNAPSHOT/bin
+tar zxvf dubbo-sample-provider-0.1-assembly.tar.gz
+cd dubbo-sample-provider-0.1/bin
 ./start.sh
 ```
 	
