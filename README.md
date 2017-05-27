@@ -20,11 +20,15 @@ INSERT INTO `user` VALUES(NULL,'aaa',11,'shanghai',NOW());
 INSERT INTO `user` VALUES(NULL,'bbb',12,'beijing',NOW());
 INSERT INTO `user` VALUES(NULL,'ccc',13,'xianggang',NOW());
 ```
-	
-### 启动服务提供者
+
+### 编译打包
 ```
 cd dubbo-sample
 mvn clean package
+```
+
+### 启动服务提供者
+```
 cd dubbo-sample-provider/target
 tar zxvf dubbo-sample-provider-0.1-assembly.tar.gz
 cd dubbo-sample-provider-0.1/bin
@@ -34,7 +38,9 @@ cd dubbo-sample-provider-0.1/bin
 ### 测试服务消费者
 ```
 cd dubbo-sample
-mvn test -Dtest=dubbo.sample.consumer.Consumer#hello -DfailIfNoTests=false
-mvn test -Dtest=dubbo.sample.consumer.Consumer#user -DfailIfNoTests=false
-mvn test -Dtest=dubbo.sample.consumer.Consumer#list -DfailIfNoTests=false
+jar -jar dubbo-sample-consumer/target/dubbo-sample-consumer-0.1.jar
+
+request : /hello
+request : /user/list
+request : /user/get/{id}
 ```
