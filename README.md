@@ -33,6 +33,14 @@ cd dubbo-sample-provider/target
 tar zxvf dubbo-sample-provider-0.1-assembly.tar.gz
 cd dubbo-sample-provider-0.1/bin
 ./start.sh
+
+如果出现类似这样的错误：
+-bash: ./start.sh: /bin/bash^M: bad interpreter: 没有那个文件或目录
+
+则：
+vim start.sh
+:set ff=unix
+:wq
 ```
 	
 ### 测试服务消费者

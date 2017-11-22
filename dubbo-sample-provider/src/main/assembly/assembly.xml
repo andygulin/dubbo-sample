@@ -10,6 +10,11 @@
             <outputDirectory>bin</outputDirectory>
             <fileMode>0755</fileMode>
         </fileSet>
+        <fileSet>
+            <directory>src/main/resources/META-INF/assembly/conf</directory>
+            <outputDirectory>conf</outputDirectory>
+            <fileMode>0755</fileMode>
+        </fileSet>
     </fileSets>
     <dependencySets>
         <dependencySet>

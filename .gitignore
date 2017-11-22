@@ -75,7 +75,6 @@ fabric.properties
 ### Eclipse template
 
 .metadata
-bin/
 tmp/
 *.tmp
 *.bak
@@ -124,5 +123,9 @@ local.properties
 .scala_dependencies
 .worksheet
 
-.gitignore
 .idea/
+dubbo-sample-consumer/dubbo-sample-consumer.iml
+dubbo-sample-ds/dubbo-sample-ds.iml
+dubbo-sample-provider/dubbo-sample-provider.iml
+dubbo-sample-service/dubbo-sample-service.iml
+dubbo-sample.iml
