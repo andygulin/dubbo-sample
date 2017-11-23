@@ -42,7 +42,7 @@ vim start.sh
 :set ff=unix
 :wq
 ```
-	
+
 ### 测试服务消费者
 ```
 cd dubbo-sample
